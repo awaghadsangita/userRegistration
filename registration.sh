@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash 
 
 echo "WEL-COME"
 
@@ -40,7 +40,7 @@ else
 fi
 echo "Enter the Password"
 read password
-passwordRegex="^[a-zA-Z0-9]{8,}$"
+passwordRegex="^(?=.*?[A-Z])(?=.{8,})"
 if [[ $password =~ $passwordRegex ]]
 then
 	echo "Valid password"

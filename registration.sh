@@ -29,3 +29,12 @@ else
 	echo "Invalid Email address"
 	echo "eg.abc.xyz@bl.co.in Email has 3 mandatory parts (abc, bl & co) and 2 optional (xyz & in) with precise @ and . positions"
 fi
+echo "Enter the mobile number"
+read mobileNumber
+mobileRegex="^[0-9]{2}[[:space:]]{1}[0-9]{10}$"
+if [[ $mobileNumber =~ $mobileRegex ]]
+then
+	echo "Valid Mobile Number"
+else
+	echo "Invalid Mobile Number"
+fi

@@ -40,7 +40,8 @@ else
 fi
 echo "Enter the Password"
 read password
-passwordRegex="[a-zA-Z0-9]*[A-Z]{1,}[a-zA-Z0-9]*"
+
+passwordRegex="^[a-zA-Z0-9]*[A-Z]{1,}[0-9]{1,}[a-zA-Z0-9]*$"
 if [[ $password =~ $passwordRegex ]]
 then
 	echo "Valid password"

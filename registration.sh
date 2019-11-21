@@ -38,3 +38,12 @@ then
 else
 	echo "Invalid Mobile Number"
 fi
+echo "Enter the Password"
+read password
+passwordRegex="^[a-zA-Z0-9]{8,}$"
+if [[ $password =~ $passwordRegex ]]
+then
+	echo "Valid password"
+else
+	echo "Invalid Password"
+fi

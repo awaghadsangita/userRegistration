@@ -11,3 +11,11 @@ then
 else
 	echo "Invalid Fisrtname"
 fi
+echo "Enter the Last Name"
+read lastName
+if [[ $lastName =~ $nameRegex ]]
+then
+	echo "Valid Lastname"
+else
+	echo "Invalid Lastname"
+fi
